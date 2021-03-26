@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.view.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:src="@mipmap/login_bg"
+        android:scaleType="centerCrop"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/loginContainerBg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/LoginInput"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/LoginInput"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ButtonOrange"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+        <Button
+            android:id="@+id/btn_fingerprint"
+            style="@style/ButtonBlue"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="Sign In with Fingerprint"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
