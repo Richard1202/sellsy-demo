@@ -26,7 +26,7 @@ class ClientDetailActivity : AppCompatActivity() {
             actionBar.title = "Detail"
         }
 
-        val client: Client = intent.getParcelableExtra(CLIENT)
+        val client: Client = intent.getParcelableExtra(CLIENT) ?: return
 
         Glide.with(this).load(client.picture)
             .circleCrop()
@@ -43,6 +43,9 @@ class ClientDetailActivity : AppCompatActivity() {
         billing_city.text = client.billingTown
         billing_state.text = client.billingState
         billing_country.text = client.billingCountry
+
+        auxiliary_account_code.text = client.auxCode
+        reference.text = client.reference
 
         btn_back.setOnClickListener {
             finish()

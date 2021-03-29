@@ -30,5 +30,8 @@ data class Client (
     @SerializedName("billing_zip") val billingZip: String?,
     @SerializedName("billing_town") val billingTown: String?,
     @SerializedName("billing_state") val billingState: String?,
-    @SerializedName("billing_countrycode") val billingCountry: String?
+    @SerializedName("billing_countrycode") val billingCountry: String?,
+
+    @SerializedName("auxCode") val auxCode: String,
+    @SerializedName("ident") val reference: String
 ): Parcelable

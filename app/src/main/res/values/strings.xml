@@ -21,7 +21,12 @@
 
     <string name="general">General</string>
     <string name="billing_information">Billing Information</string>
+    <string name="accounting_data">Accounting Data</string>
     <string name="delivery">Delivery</string>
+
+    <string name="auxiliary_account_code">Auxiliary account code</string>
+    <string name="tariff_category">Tariff category</string>
+    <string name="reference">Reference</string>
 
     <string name="address">Address</string>
     <string name="city">City</string>

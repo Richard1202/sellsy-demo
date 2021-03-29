@@ -63,276 +63,145 @@
                 android:textSize="@dimen/text_size_xxlarge"/>
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:theme="@style/TextViewNormal"
-            android:layout_marginTop="@dimen/margin_padding_size_large"
-            android:text="Last Transactions"/>
-
-        <HorizontalScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="2dp">
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_padding_size_large"
+            android:layout_marginTop="@dimen/margin_padding_size_large"
+            android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
+                android:layout_marginStart="2dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_ahalf_vertical_margin">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/circle_minus"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="$5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_minus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="$5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="Carrefour Express"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="My quotation"
+                        android:lines="2"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_micro"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_minus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/activity_ahalf_vertical_margin"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_ahalf_vertical_margin">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="$12"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/circle_minus"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="McDonalds"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="$12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_plus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="1000"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="Jason Bickberg"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Invoice to pay"
+                        android:lines="2"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_micro"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_minus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
+                android:layout_marginEnd="2dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="$6"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_ahalf_vertical_margin">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="Google Music"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/circle_plus"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="1000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_xlarge"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_plus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="$5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="Richard Stewart"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="90dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="@dimen/activity_ahalf_vertical_margin"
-                    app:cardElevation="1dp"
-                    app:cardCornerRadius="12dp">
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="@dimen/activity_ahalf_vertical_margin">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/circle_minus"
-                            android:layout_gravity="center"
-                            android:gravity="center"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="$5"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_size_xlarge"
-                            android:gravity="center"
-                            android:textStyle="bold"/>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:text="Carrefour Express"
-                            android:lines="2"
-                            android:textColor="@color/dark_gray"
-                            android:textSize="@dimen/text_size_micro"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-        </HorizontalScrollView>
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="My opportunities"
+                        android:lines="2"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_micro"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -349,7 +218,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/TextViewNormal"
-                    android:text="Transfer to Mom"
+                    android:text="Todo"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -367,7 +236,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="$100"
+                    android:text="4"
                     android:textSize="@dimen/text_size_medium"
                     android:textColor="@color/white"
                     android:background="@drawable/bg_round_pink"
@@ -394,7 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/TextViewNormal"
-                    android:text="Concert Agency Rent"
+                    android:text="en progress"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -411,7 +280,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="$4000"
+                    android:text="2"
                     android:textSize="@dimen/text_size_medium"
                     android:textColor="@color/white"
                     android:background="@drawable/bg_round_purple"
@@ -439,7 +308,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/TextViewNormal"
-                    android:text="Board Game Club Free"
+                    android:text="to come"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -456,7 +325,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="$100"
+                    android:text="0"
                     android:textSize="@dimen/text_size_medium"
                     android:textColor="@color/white"
                     android:background="@drawable/bg_round_blue"
@@ -484,7 +353,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/TextViewNormal"
-                    android:text="Deliver to Rciarhd"
+                    android:text="Done"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
@@ -501,7 +370,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="$120"
+                    android:text="1"
                     android:textSize="@dimen/text_size_medium"
                     android:textColor="@color/white"
                     android:background="@drawable/bg_round_pink"
@@ -520,44 +389,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="@dimen/margin_padding_size_small">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:theme="@style/TextViewNormal"
-                    android:text="Buy Medicine"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Last 2 days ago"
-                    android:textColor="@color/light_gray"
-                    android:textSize="@dimen/text_size_medium"
-                    android:layout_marginBottom="@dimen/margin_padding_size_small"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="$500"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textColor="@color/white"
-                    android:background="@drawable/bg_round_blue"
-                    android:gravity="center"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="12dp"
-                    android:layout_marginTop="@dimen/margin_padding_size_small"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
     </LinearLayout>

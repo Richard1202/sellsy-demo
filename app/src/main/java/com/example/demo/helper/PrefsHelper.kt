@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
+import com.example.demo.BuildConfig
 
 class PrefsHelper(private val sp: SharedPreferences) {
 
@@ -22,7 +23,7 @@ class PrefsHelper(private val sp: SharedPreferences) {
 
     var userName: String?
         get() {
-            val value = sp.getString(PREF_USER_NAME, "")
+            val value = sp.getString(PREF_USER_NAME, BuildConfig.DEFAULT_EMAIL)
             return if (value != null) value else null
         }
         set(value) {
@@ -37,7 +38,7 @@ class PrefsHelper(private val sp: SharedPreferences) {
 
     var password: String?
         get() {
-            val value = sp.getString(PREF_USER_PASSWORD, "")
+            val value = sp.getString(PREF_USER_PASSWORD, BuildConfig.DEFAULT_PASSWORD)
             return if (value != null) value else null
         }
         set(value) {

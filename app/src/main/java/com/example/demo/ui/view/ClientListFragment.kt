@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -16,7 +17,7 @@ import com.kaopiz.kprogresshud.KProgressHUD
 import kotlinx.android.synthetic.main.fragment_client_list.view.*
 
 /**
- * A fragment representing a list of Items.
+ * A fragment representing a list of clients.
  */
 class ClientListFragment : Fragment() {
 
@@ -56,6 +57,16 @@ class ClientListFragment : Fragment() {
                 loadMore(index)
                 //Calling loadMore function in Runnable to fix the
                 // java.lang.IllegalStateException: Cannot call this method while RecyclerView is computing a layout or scrolling error
+            }
+        })
+
+        view.search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                return false
+            }
+            override fun onQueryTextChange(newText: String): Boolean {
+                adapter.filter.filter(newText)
+                return false
             }
         })
 

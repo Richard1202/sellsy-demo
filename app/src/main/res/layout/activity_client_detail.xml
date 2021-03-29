@@ -176,6 +176,78 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!--    Accounting  Data     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/accounting_data" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin"
+                        android:textColor="@android:color/black"
+                        android:text="@string/auxiliary_account_code" />
+
+                    <TextView
+                        android:id="@+id/auxiliary_account_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin"
+                        android:text="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/detailSplitterGray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_ahalf_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin"
+                        android:textColor="@android:color/black"
+                        android:text="@string/reference" />
+
+                    <TextView
+                        android:id="@+id/reference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_ahalf_vertical_margin"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
         <!--    Billing Information     -->
         <TextView
             android:layout_width="wrap_content"
