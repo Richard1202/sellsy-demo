@@ -34,8 +34,8 @@ class ClientRecyclerAdapter(private val context: Context, private var values: Li
         Glide.with(context).load(item.picture)
             .circleCrop()
             .into(holder.imageView)
-        holder.nameView.text = item.fullName
-        holder.addressView.text = item.joinDate
+        holder.nameView.text = item.fullName.trim()
+        holder.addressView.text = item.joinDate.trim()
     }
 
     fun  getItem(position: Int): Client = values[position]
