@@ -7,6 +7,18 @@
     android:background="@color/background"
     android:orientation="vertical">
 
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Clients"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:name="com.example.demo.view.ClientsFragment"

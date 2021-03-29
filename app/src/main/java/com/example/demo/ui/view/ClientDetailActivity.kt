@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.demo.R
 import com.example.demo.data.model.Client
 import kotlinx.android.synthetic.main.activity_client_detail.*
+import kotlinx.android.synthetic.main.activity_login.*
 
 class ClientDetailActivity : AppCompatActivity() {
 
@@ -43,6 +44,9 @@ class ClientDetailActivity : AppCompatActivity() {
         billing_state.text = client.billingState
         billing_country.text = client.billingCountry
 
+        btn_back.setOnClickListener {
+            finish()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

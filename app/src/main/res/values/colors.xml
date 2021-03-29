@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008fdc</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#008fdc</color>
+
+    <color name="black">#2e2e35</color>
+    <color name="white">#fff</color>
+    <color name="light_gray">#bcbccc</color>
+    <color name="dark_gray">#87879e</color>
+
+    <color name="button_orange">#fe5824</color>
+    <color name="button_white">@android:color/white</color>
+    <color name="button_blue">#40579b</color>
+    <color name="button_green">#43bd42</color>
+    <color name="button_gray">#f1f5f8</color>
+    <color name="button_magenta">#ea2064</color>
+    <color name="button_yellow">#ff9807</color>
+
+    <color name="divider">#f6f6f6</color>
+
+    <color name="menuNavigationBg">#293339</color>
+
+    <color name="image_background">#123</color>
+
+    <color name="loginContainerBg">#f1f5f8</color>
+    <color name="loginText">#585858</color>
+
+    <color name="normal">#6b8c94</color>
+    <color name="success">#19a594</color>
+    <color name="failure">#f75a31</color>
+
+    <color name="headBackground">#fbfcff</color>
+    <color name="headText">#585858</color>
+
+<!--    <color name="background">#fff</color>-->
+    <color name="background">#fff</color>
+    <color name="detailSplitterGray">#70dfdfdf</color>
+
+</resources>
